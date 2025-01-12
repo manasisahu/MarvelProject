@@ -1,0 +1,473 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "marvel-dashboard-character-display-and-search-functionality;display-list-of-marvel-characters",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Display List of Marvel Characters",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 484997799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user navigates to the dashboard home page",
+            "match": {
+              "location": "src\\test\\steps\\infiniteScrollingSteps.ts:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 89043222599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "a list of Marvel characters is displayed automatically without requiring additional user action",
+            "match": {
+              "location": "src\\test\\steps\\infiniteScrollingSteps.ts:78"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10620599
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Thumbnail image"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Name"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Short description"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Number of comics"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Published date"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "each character has the following details:",
+            "match": {
+              "location": "src\\test\\steps\\infiniteScrollingSteps.ts:94"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 12407800,
+              "error_message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: true\nReceived: false\n    at Proxy.<anonymous> (C:\\Users\\sneha\\source\\repos\\MarvelAutomation\\node_modules\\@playwright\\test\\lib\\matchers\\expect.js:165:37)\n    at World.<anonymous> (C:\\Users\\sneha\\source\\repos\\MarvelAutomation\\src\\test\\steps\\infiniteScrollingSteps.ts:115:51)\n    at step (C:\\Users\\sneha\\source\\repos\\MarvelAutomation\\src\\test\\steps\\infiniteScrollingSteps.ts:33:23)\n    at Object.next (C:\\Users\\sneha\\source\\repos\\MarvelAutomation\\src\\test\\steps\\infiniteScrollingSteps.ts:14:53)\n    at fulfilled (C:\\Users\\sneha\\source\\repos\\MarvelAutomation\\src\\test\\steps\\infiniteScrollingSteps.ts:5:58)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10313102299
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "marvel-dashboard-character-display-and-search-functionality;infinite-scrolling",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Infinite Scrolling",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 230457099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user navigates to the dashboard home page",
+            "match": {
+              "location": "src\\test\\steps\\infiniteScrollingSteps.ts:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 87889914800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "the characters are displayed on the dashboard home page",
+            "match": {
+              "location": "src\\test\\steps\\infiniteScrollingSteps.ts:158"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5769100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "the user scrolls down the list",
+            "match": {
+              "location": "src\\test\\steps\\infiniteScrollingSteps.ts:174"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6295400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "additional characters are loaded dynamically",
+            "match": {
+              "location": "src\\test\\steps\\infiniteScrollingSteps.ts:186"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 36408100,
+              "error_message": "Error: expect(received).toBeGreaterThan(expected)\n\nExpected: > 51\nReceived:   51\n    at Proxy.<anonymous> (C:\\Users\\sneha\\source\\repos\\MarvelAutomation\\node_modules\\@playwright\\test\\lib\\matchers\\expect.js:165:37)\n    at World.<anonymous> (C:\\Users\\sneha\\source\\repos\\MarvelAutomation\\src\\test\\steps\\infiniteScrollingSteps.ts:202:59)\n    at step (C:\\Users\\sneha\\source\\repos\\MarvelAutomation\\src\\test\\steps\\infiniteScrollingSteps.ts:33:23)\n    at Object.next (C:\\Users\\sneha\\source\\repos\\MarvelAutomation\\src\\test\\steps\\infiniteScrollingSteps.ts:14:53)\n    at fulfilled (C:\\Users\\sneha\\source\\repos\\MarvelAutomation\\src\\test\\steps\\infiniteScrollingSteps.ts:5:58)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10085891099
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test",
+            "line": 17
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "marvel-dashboard-character-display-and-search-functionality;search-characters-by-name",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Search Characters by Name",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 340778900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user navigates to the dashboard home page",
+            "match": {
+              "location": "src\\test\\steps\\infiniteScrollingSteps.ts:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 88019780000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 25,
+            "name": "the characters are displayed on the dashboard home page",
+            "match": {
+              "location": "src\\test\\steps\\infiniteScrollingSteps.ts:158"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3927799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "the user enters a search term in the search bar",
+            "match": {
+              "location": "src\\test\\steps\\infiniteScrollingSteps.ts:209"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37503300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "the list updates to display characters matching the search term",
+            "match": {
+              "location": "src\\test\\steps\\infiniteScrollingSteps.ts:224"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 23671000,
+              "error_message": "Error: expect(received).toContain(expected) // indexOf\n\nExpected value: \"Spider-Man\"\nReceived array: [\"3-D Man\", \"A-Bomb (HAS)\", \"A.I.M.\", \"Aaron Stack\", \"Abomination (Emil Blonsky)\", \"Abomination (Ultimate)\", \"Absorbing Man\", \"Abyss\", \"Abyss (Age of Apocalypse)\", \"Adam Destine\", \"Adam Warlock\", \"Aegis (Trey Rollins)\", \"Aero (Aero)\", \"Agatha Harkness\", \"Agent Brand\", \"Agent X (Nijo)\", \"Agent Zero\", \"Agents of Atlas\", \"Aginar\", \"Air-Walker (Gabriel Lan)\", \"Ajak\", \"Ajaxis\", \"Akemi\", \"Alain\", \"Albert Cleary\", \"Albion\", \"Alex Power\", \"Alex Wilder\", \"Alexa Mendez\", \"Alexander Pierce\", \"Alice\", \"Alicia Masters\", \"Alpha Flight\", \"Alpha Flight (Ultimate)\", \"Alvin Maker\", \"Amadeus Cho\", \"Amanda Sefton\", \"Amazoness\", \"American Eagle (Jason Strongbow)\", \"Amiko\", \"Amora\", \"Amphibian (Earth-712)\", \"Amun\", \"Ancient One\", \"Ancient One (Ultimate)\", \"Angel (Angel Salvadore)\", \"Angel (Thomas Halloway)\", \"Angel (Ultimate)\", \"Angel (Warren Worthington III)\", \"Angela (Aldrif Odinsdottir)\"]\n    at Proxy.<anonymous> (C:\\Users\\sneha\\source\\repos\\MarvelAutomation\\node_modules\\@playwright\\test\\lib\\matchers\\expect.js:165:37)\n    at World.<anonymous> (C:\\Users\\sneha\\source\\repos\\MarvelAutomation\\src\\test\\steps\\infiniteScrollingSteps.ts:235:60)\n    at step (C:\\Users\\sneha\\source\\repos\\MarvelAutomation\\src\\test\\steps\\infiniteScrollingSteps.ts:33:23)\n    at Object.next (C:\\Users\\sneha\\source\\repos\\MarvelAutomation\\src\\test\\steps\\infiniteScrollingSteps.ts:14:53)\n    at fulfilled (C:\\Users\\sneha\\source\\repos\\MarvelAutomation\\src\\test\\steps\\infiniteScrollingSteps.ts:5:58)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10283273099
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test",
+            "line": 23
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "marvel-dashboard-character-display-and-search-functionality;no-characters-found-for-search-term",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "No Characters Found for Search Term",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 333006600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user navigates to the dashboard home page",
+            "match": {
+              "location": "src\\test\\steps\\infiniteScrollingSteps.ts:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 88087204800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 31,
+            "name": "the characters are displayed on the dashboard home page",
+            "match": {
+              "location": "src\\test\\steps\\infiniteScrollingSteps.ts:158"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4110499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "the user performs a search",
+            "match": {
+              "location": "src\\test\\steps\\infiniteScrollingSteps.ts:242"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37832399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "no characters match the user’s search term",
+            "match": {
+              "location": "src\\test\\steps\\infiniteScrollingSteps.ts:257"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 7583999,
+              "error_message": "Error: expect(received).toBeLessThanOrEqual(expected)\n\nExpected: <= 0\nReceived:    51\n    at Proxy.<anonymous> (C:\\Users\\sneha\\source\\repos\\MarvelAutomation\\node_modules\\@playwright\\test\\lib\\matchers\\expect.js:165:37)\n    at World.<anonymous> (C:\\Users\\sneha\\source\\repos\\MarvelAutomation\\src\\test\\steps\\infiniteScrollingSteps.ts:267:47)\n    at step (C:\\Users\\sneha\\source\\repos\\MarvelAutomation\\src\\test\\steps\\infiniteScrollingSteps.ts:33:23)\n    at Object.next (C:\\Users\\sneha\\source\\repos\\MarvelAutomation\\src\\test\\steps\\infiniteScrollingSteps.ts:14:53)\n    at fulfilled (C:\\Users\\sneha\\source\\repos\\MarvelAutomation\\src\\test\\steps\\infiniteScrollingSteps.ts:5:58)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "a message is displayed: \"No characters found.\"",
+            "match": {
+              "location": "src\\test\\steps\\infiniteScrollingSteps.ts:273"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10490490299
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test",
+            "line": 29
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "marvel-dashboard-character-display-and-search-functionality;view-detailed-information-for-a-character",
+        "keyword": "Scenario",
+        "line": 37,
+        "name": "View Detailed Information for a Character",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 427440100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user navigates to the dashboard home page",
+            "match": {
+              "location": "src\\test\\steps\\infiniteScrollingSteps.ts:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 88096464800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 38,
+            "name": "the characters are displayed on the dashboard home page",
+            "match": {
+              "location": "src\\test\\steps\\infiniteScrollingSteps.ts:158"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2911300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "the user clicks on a character",
+            "match": {
+              "location": "src\\test\\steps\\infiniteScrollingSteps.ts:292"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 36835600,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'locator')\n    at World.<anonymous> (C:\\Users\\sneha\\source\\repos\\MarvelAutomation\\src\\test\\steps\\infiniteScrollingSteps.ts:302:54)\n    at step (C:\\Users\\sneha\\source\\repos\\MarvelAutomation\\src\\test\\steps\\infiniteScrollingSteps.ts:33:23)\n    at Object.next (C:\\Users\\sneha\\source\\repos\\MarvelAutomation\\src\\test\\steps\\infiniteScrollingSteps.ts:14:53)\n    at fulfilled (C:\\Users\\sneha\\source\\repos\\MarvelAutomation\\src\\test\\steps\\infiniteScrollingSteps.ts:5:58)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "detailed information about the character is shown",
+            "match": {
+              "location": "src\\test\\steps\\infiniteScrollingSteps.ts:311"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10227286499
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test",
+            "line": 36
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "marvel-dashboard-character-display-and-search-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Marvel Dashboard Character Display and Search Functionality",
+    "tags": [],
+    "uri": "src\\test\\features\\infinite-scrolling.feature"
+  }
+]
